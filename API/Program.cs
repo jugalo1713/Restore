@@ -27,4 +27,8 @@ app.UseAuthorization();
 
 app.MapControllers();
 
+// seed db
+
+DbInitializer.InitDbAsync(app);
+
 app.Run();
